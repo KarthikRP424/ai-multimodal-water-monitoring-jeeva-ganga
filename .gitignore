@@ -1,0 +1,30 @@
+
+# Dependencies
+node_modules/
+venv/
+.venv/
+backend/venv/
+
+# Frontend generated files
+frontend/dist/
+frontend/.vite/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Firmware configuration
+firmware/wifi_config.h
+
+# OS files
+.DS_Store
+Thumbs.db
