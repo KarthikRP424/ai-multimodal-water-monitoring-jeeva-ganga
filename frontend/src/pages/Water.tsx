@@ -4,7 +4,7 @@ import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContai
 import { fetchUltrasonic } from "../services/api";
 import { useMonitoringWS } from "../hooks/useMonitoringWS";
 
-export const Water = () => {
+const Water = () => {
   const [loading, setLoading] = useState(true);
   const [initial, setInitial] = useState<any[]>([]);
   const wsState = useMonitoringWS(import.meta.env.VITE_BACKEND_URL || "http://localhost:8000");
@@ -28,7 +28,6 @@ export const Water = () => {
       ...wsState.ultrasonicReadings.map((msg) => msg.payload),
       ...initial,
     ];
-    // sort by timestamp ascending
     return data.sort((a, b) => new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime());
   }, [wsState.ultrasonicReadings, initial]);
 
@@ -55,3 +54,5 @@ export const Water = () => {
     </div>
   );
 };
+
+export default Water;

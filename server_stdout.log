@@ -1,0 +1,248 @@
+INFO:     192.168.163.25:40892 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.163.25:40892 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:40896 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     192.168.163.25:40896 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:53932 - "GET / HTTP/1.1" 304 Not Modified
+INFO:     192.168.163.25:53932 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:45414 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:45414 - "GET / HTTP/1.1" 304 Not Modified
+INFO:     192.168.163.25:45414 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:50446 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:50446 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:53436 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:55114 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:55128 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:55128 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.69:54604 - "POST /api/sensors/pir/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:33566 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:33566 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:44128 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:44128 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:52672 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:52672 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:52672 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:45612 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:45612 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:39616 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:39616 - "GET / HTTP/1.1" 304 Not Modified
+INFO:     192.168.163.25:39616 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:39622 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:48430 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:48430 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:42844 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:42844 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:54202 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:54202 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:54202 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:54202 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:57332 - "GET / HTTP/1.1" 304 Not Modified
+INFO:     192.168.163.25:57332 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:57346 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:57346 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:36842 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:45556 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:45570 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:52868 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:52874 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:52874 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:52874 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:44108 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:44114 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:36218 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:35418 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:53112 - "GET / HTTP/1.1" 304 Not Modified
+INFO:     192.168.163.25:53112 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:53116 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:36426 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.66:44364 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.163.66:44364 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.66:44364 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     192.168.163.66:55276 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.66:55276 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.66:48658 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.66:48658 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.66:48054 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.66:48054 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.66:47382 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.66:47392 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.66:47392 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.66:36608 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.66:36608 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.66:47790 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.66:47790 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.66:58750 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.69:52895 - "POST /api/sensors/pir/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:39242 - "GET / HTTP/1.1" 304 Not Modified
+INFO:     192.168.163.25:39242 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:39242 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     192.168.163.25:39268 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:55326 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:55332 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:55332 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:36786 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:33952 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:33952 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:55708 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.69:55833 - "POST /api/sensors/pir/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:55708 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:35400 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:35412 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:34424 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:34424 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:34424 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:36824 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:36824 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.69:55834 - "POST /api/sensors/pir/ HTTP/1.1" 200 OK
+INFO:     192.168.163.69:55835 - "POST /api/sensors/pir/ HTTP/1.1" 200 OK
+INFO:     192.168.163.117:63883 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.163.117:63883 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.117:59519 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     192.168.163.117:59519 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.117:59519 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.117:59519 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.117:51517 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.117:51517 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.117:51517 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.117:53401 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.117:64347 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.117:65006 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.69:55836 - "POST /api/sensors/pir/ HTTP/1.1" 200 OK
+INFO:     192.168.163.117:53401 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.117:65006 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.117:53401 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:58994 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.117:57525 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.117:62583 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.117:55001 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.117:62583 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.117:55001 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.117:62583 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:58994 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:58994 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.117:62583 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:58994 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.117:62583 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:58994 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.117:56632 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:41180 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.117:56632 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:41180 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:55756 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:55756 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:55756 - "GET / HTTP/1.1" 304 Not Modified
+INFO:     192.168.163.25:55756 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:42992 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:46598 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:53336 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:53336 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:53336 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:60396 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:60396 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:56004 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:56004 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:43002 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:44246 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:44246 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:53406 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:53406 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:39956 - "GET / HTTP/1.1" 304 Not Modified
+INFO:     192.168.163.25:39960 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:39972 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     192.168.163.25:59588 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:59598 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:59598 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:44954 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:44954 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:44954 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:36304 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:36304 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:36304 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:37242 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:37242 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:50886 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:52572 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.163.25:52572 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:52576 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:43104 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:41278 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:43104 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:41278 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:41278 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:41278 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:40196 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:41278 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:40196 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:41278 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:40196 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     100.95.175.185:38224 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:34710 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:60570 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:37248 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:60956 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:46268 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:52566 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:52570 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:45882 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:45916 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:45898 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:45884 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:45906 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:45876 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:45884 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:45898 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:45882 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:45906 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:45906 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:45906 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:60654 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:60670 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:56624 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:56626 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:41354 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:41368 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:56882 - "GET / HTTP/1.1" 304 Not Modified
+INFO:     192.168.163.25:56886 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     192.168.163.25:56882 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:45208 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:42410 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:42420 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:40012 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:40022 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:53544 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:53546 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:40016 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:47368 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:47384 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:40024 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:42632 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:42636 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:42350 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:42636 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:42350 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:42636 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:44738 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:44738 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:44738 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:39540 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:60276 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.69:49426 - "POST /api/sensors/pir/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:39540 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:39540 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:60276 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:60276 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:47462 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:47460 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:33920 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:54772 - "GET /api/alerts/ HTTP/1.1" 200 OK
+INFO:     192.168.163.25:47460 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:33926 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:44616 - "GET / HTTP/1.1" 304 Not Modified
+INFO:     192.168.163.25:44626 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     192.168.163.25:44616 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:44230 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:38392 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:38406 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:52812 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:52820 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.25:58426 - "GET /api/alerts/ HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.163.69:61271 - "POST /api/sensors/pir/ HTTP/1.1" 500 Internal Server Error

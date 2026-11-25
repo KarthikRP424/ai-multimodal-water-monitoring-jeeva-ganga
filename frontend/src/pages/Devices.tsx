@@ -4,7 +4,7 @@ import { fetchDevicesStatus } from "../services/api";
 import { useMonitoringWS } from "../hooks/useMonitoringWS";
 import { DeviceCard } from "../components/DeviceCard";
 
-export const Devices = () => {
+const Devices = () => {
   const [devices, setDevices] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const wsState = useMonitoringWS(import.meta.env.VITE_BACKEND_URL || "http://localhost:8000");
@@ -49,3 +49,5 @@ export const Devices = () => {
     </div>
   );
 };
+
+export default Devices;

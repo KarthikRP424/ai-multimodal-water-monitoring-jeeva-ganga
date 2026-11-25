@@ -3,12 +3,12 @@ import React, { useEffect, useState } from "react";
 import { fetchAlerts, acknowledgeAlert } from "../services/api";
 import { useMonitoringWS } from "../hooks/useMonitoringWS";
 
-export const Alerts = () => {
+const Alerts = () => {
   const [alerts, setAlerts] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const wsState = useMonitoringWS(import.meta.env.VITE_BACKEND_URL || "http://localhost:8000");
 
-  // Initial load
+  // Initial load of alerts
   useEffect(() => {
     const load = async () => {
       try {
@@ -28,7 +28,6 @@ export const Alerts = () => {
     const live = wsState.alerts.map((msg) => msg.payload);
     if (live.length) {
       setAlerts((prev) => {
-        // Avoid duplicates by ID
         const ids = new Set(prev.map((a) => a.id));
         const newAlerts = live.filter((a) => !ids.has(a.id));
         return [...newAlerts, ...prev];
@@ -39,7 +38,9 @@ export const Alerts = () => {
   const handleAcknowledge = async (id: number) => {
     try {
       await acknowledgeAlert(id);
-      setAlerts((prev) => prev.map((a) => (a.id === id ? { ...a, acknowledged: true } : a)));
+      setAlerts((prev) =>
+        prev.map((a) => (a.id === id ? { ...a, acknowledged: true } : a))
+      );
     } catch (e) {
       console.error(e);
     }
@@ -79,3 +80,5 @@ export const Alerts = () => {
     </div>
   );
 };
+
+export default Alerts;

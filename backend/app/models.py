@@ -4,6 +4,9 @@ from datetime import datetime
 from sqlmodel import SQLModel, Field
 
 class CameraEvent(SQLModel, table=True):
+    __tablename__ = "camerapevent"
+
+
     id: int = Field(default=None, primary_key=True)
     device_id: str
     motion: bool

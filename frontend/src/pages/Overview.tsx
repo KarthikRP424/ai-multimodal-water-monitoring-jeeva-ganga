@@ -1,10 +1,10 @@
 // src/pages/Overview.tsx
 import React, { useEffect, useState } from "react";
-import { fetchOverview, fetchAlerts } from "../services/api";
+import { fetchOverview } from "../services/api";
 import { StatCard } from "../components/StatCard";
 import { useMonitoringWS } from "../hooks/useMonitoringWS";
 
-export const Overview = () => {
+const Overview = () => {
   const [data, setData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const wsState = useMonitoringWS(import.meta.env.VITE_BACKEND_URL || "http://localhost:8000");
@@ -37,3 +37,5 @@ export const Overview = () => {
     </div>
   );
 };
+
+export default Overview;

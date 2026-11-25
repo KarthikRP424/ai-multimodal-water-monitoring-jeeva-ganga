@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { fetchPIREvents } from "../services/api";
 import { useMonitoringWS } from "../hooks/useMonitoringWS";
 
-export const PIR = () => {
+const PIR = () => {
   const [loading, setLoading] = useState(true);
   const [initial, setInitial] = useState<any[]>([]);
   const wsState = useMonitoringWS(import.meta.env.VITE_BACKEND_URL || "http://localhost:8000");
@@ -52,3 +52,5 @@ export const PIR = () => {
     </div>
   );
 };
+
+export default PIR;

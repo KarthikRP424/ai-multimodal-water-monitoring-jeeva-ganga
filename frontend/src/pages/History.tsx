@@ -3,11 +3,12 @@ import React, { useEffect, useState } from "react";
 import { fetchDetections } from "../services/api";
 import { useMonitoringWS } from "../hooks/useMonitoringWS";
 
-export const History = () => {
+const History = () => {
   const [detections, setDetections] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const wsState = useMonitoringWS(import.meta.env.VITE_BACKEND_URL || "http://localhost:8000");
 
+  // Initial load of existing detections
   useEffect(() => {
     const load = async () => {
       try {
@@ -22,7 +23,7 @@ export const History = () => {
     load();
   }, []);
 
-  // Listen for live uploads (camera_upload) and prepend
+  // Live camera upload events – prepend new detections
   useEffect(() => {
     const uploads = wsState.cameraEvents.filter((msg) => msg.type === "camera_upload");
     if (uploads.length) {
@@ -54,3 +55,5 @@ export const History = () => {
     </div>
   );
 };
+
+export default History;

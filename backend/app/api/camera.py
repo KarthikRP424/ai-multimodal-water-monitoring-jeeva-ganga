@@ -77,7 +77,7 @@ async def upload_image(
         process_camera_image(db_event.id, upload_path)
     )
 
-    return camera_schema.CameraUploadResponse(event_id=db_event.id, status="queued")
+    return camera_schema.CameraUploadResponse(event_id=db_event.id, status="queued", device_id=device_id, image_path=filename)
 
 # Background processing – placed in this file to avoid circular imports
 async def process_camera_image(event_id: int, image_path: str):
@@ -86,6 +86,7 @@ async def process_camera_image(event_id: int, image_path: str):
         detections = vision.run_detection(image_path)
         # Store each detection
         with database.get_session() as sess:
+            # Store each detection
             for det in detections:
                 db_det = models.DetectionResult(
                     camera_event_id=event_id,
@@ -95,6 +96,22 @@ async def process_camera_image(event_id: int, image_path: str):
                 )
                 sess.add(db_det)
             sess.commit()
+            # Human detection alert
+            human_detected = any(
+                det["class"].lower() == "person" and det["confidence"] >= 0.6
+                for det in detections
+            )
+            if human_detected:
+                # Retrieve the camera event to get device_id
+                cam_event = sess.get(models.CameraEvent, event_id)
+                alert = models.Alert(
+                    device_id=cam_event.device_id,
+                    category="human_detection",
+                    severity="info",
+                    description="Human detected in camera feed",
+                )
+                sess.add(alert)
+                sess.commit()
         # Broadcast result to front‑end
         await send_to_all({
             "type": "detection",
