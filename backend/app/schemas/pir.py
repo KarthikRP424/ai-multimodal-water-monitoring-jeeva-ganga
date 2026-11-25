@@ -1,6 +1,6 @@
 # backend/app/schemas/pir.py
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, ConfigDict
 from datetime import datetime
 
 class PIRSensorEventCreate(BaseModel):
@@ -14,5 +14,4 @@ class PIRSensorEventResponse(BaseModel):
     motion: bool
     timestamp: datetime
 
-    class Config:
-        orm_mode = True
+    model_config = ConfigDict(from_attributes=True)

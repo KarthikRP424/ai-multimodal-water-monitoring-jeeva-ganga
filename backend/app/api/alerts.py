@@ -1,6 +1,4 @@
-# backend/app/api/alerts.py
-
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, HTTPException
 from sqlmodel import Session, select
 
 from .. import models, database
@@ -12,6 +10,10 @@ router = APIRouter()
 def list_alerts(skip: int = 0, limit: int = 100, session: Session = Depends(database.get_session)):
     alerts = session.exec(select(models.Alert).offset(skip).limit(limit)).all()
     return alerts
+
+@router.post("/", response_model=alerts_schema.AlertResponse)
+def create_alert_endpoint(alert: alerts_schema.AlertCreate, session: Session = Depends(database.get_session)):
+    return create_alert(alert, session)
 
 @router.patch("/{alert_id}", response_model=alerts_schema.AlertResponse)
 def acknowledge_alert(alert_id: int, session: Session = Depends(database.get_session)):

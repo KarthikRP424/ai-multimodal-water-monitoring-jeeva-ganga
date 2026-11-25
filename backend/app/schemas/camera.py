@@ -10,3 +10,7 @@ class CameraUploadCreate(BaseModel):
 class CameraUploadResponse(BaseModel):
     event_id: int = Field(..., description="Database primary key of the stored CameraEvent")
     status: str = Field("queued", description="Processing status – initially queued")
+    device_id: str = Field(..., description="Device identifier from request")
+    image_path: str = Field(..., description="Relative path of stored image file")
+    event_id: int = Field(..., description="Database primary key of the stored CameraEvent")
+    status: str = Field("queued", description="Processing status – initially queued")

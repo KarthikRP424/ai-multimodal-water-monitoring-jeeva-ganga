@@ -1,13 +1,66 @@
-// index.html
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JEEVA GANGA</title>
-    <script type="module" src="/src/main.tsx"></script>
+    <title>JEEVA GANGA - Water Emergency Monitoring</title>
+    <style>
+      body { margin:0; font-family:Arial,Helvetica,sans-serif; background:#1a202c; color:#fff; }
+      nav { background:#1a202c; color:#fff; padding:1rem; display:flex; flex-direction:column; gap:.5rem; }
+      nav a { color:#90cdf4; text-decoration:none; }
+      nav a:hover { text-decoration:underline; }
+      .header { font-size:1.5rem; font-weight:bold; }
+      .subheader { font-size:1.2rem; margin-top:.5rem; }
+      .section { margin-top:.5rem; }
+      table { border-collapse:collapse; width:100%; margin-top:1rem; }
+      th, td { border:1px solid #555; padding:.4rem; text-align:left; }
+      th { background:#2d3748; color:#fff; }
+      .stream { max-width:100%; height:auto; border:2px solid #555; margin-top:1rem; }
+    </style>
   </head>
-  <body class="bg-primary text-white">
-    <div id="root"></div>
+  <body>
+    <nav>
+      <div class="header">JEEVA GANGA</div>
+      <div class="subheader">Water Emergency Monitoring System</div>
+      <a href="http://localhost:3000/">Overview</a>
+      <a href="http://localhost:3000/camera">Camera</a>
+    </nav>
+
+    <!-- Alerts Table -->
+    <section style="padding:1rem;">
+      <h2>? Motion Alerts</h2>
+      <table id="alerts-table">
+        <tr>
+          <th>ID</th><th>Device</th><th>Category</th><th>Severity</th><th>Description</th><th>Timestamp</th>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Live Camera Feed -->
+    <section style="padding:1rem;">
+      <h2>?? Live ESP-CAM Feed</h2>
+      <a href="http://192.168.163.69/" target="_blank" style="display:inline-block;margin-bottom:0.5rem;background:#90cdf4;color:#1a202c;padding:0.5rem 1rem;border-radius:4px;text-decoration:none;">Open Live Camera in New Tab</a>
+      <!-- Sidecar link for interactive view -->
+      [Open Camera (sidecar)](sidecar://http://192.168.163.69/)
+      <p style="color:#ff6b6b;">If the video does not appear, verify the ESP-CAM IP and that the URL ends with <code>/stream</code>.</p>
+    </section>
+
+    <script>
+      // Refresh alerts every 5 seconds
+      async function loadAlerts(){
+        try{
+          const resp = await fetch('/api/alerts/');
+          const alerts = await resp.json();
+          const tbl = document.getElementById('alerts-table');
+          tbl.innerHTML = `<tr><th>ID</th><th>Device</th><th>Category</th><th>Severity</th><th>Description</th><th>Timestamp</th></tr>`;
+          alerts.forEach(a=>{
+            const row=document.createElement('tr');
+            row.innerHTML = `<td>${a.id}</td><td>${a.device_id}</td><td>${a.category}</td><td>${a.severity}</td><td>${a.description}</td><td>${a.timestamp}</td>`;
+            tbl.appendChild(row);
+          });
+        }catch(e){ console.error('Failed to load alerts',e); }
+      }
+      window.addEventListener('load',()=>{ loadAlerts(); setInterval(loadAlerts,5000); });
+    </script>
   </body>
 </html>

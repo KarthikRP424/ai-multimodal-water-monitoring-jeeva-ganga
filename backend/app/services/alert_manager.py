@@ -10,8 +10,9 @@ All alerts are also broadcast to WebSocket clients via ``send_to_all``.
 
 import logging
 from datetime import datetime
-from typing import Dict
+from typing import Dict, Optional
 
+from fastapi import BackgroundTasks
 from .. import models, database
 from ..broadcast import send_to_all
 
@@ -21,7 +22,14 @@ log = logging.getLogger(__name__)
 WARNING_DISTANCE_CM = 150.0
 CRITICAL_DISTANCE_CM = 80.0
 
-def _create_alert(session, device_id: str, category: str, severity: str, description: str):
+def _create_alert(
+    session,
+    device_id: str,
+    category: str,
+    severity: str,
+    description: str,
+    background_tasks: Optional[BackgroundTasks] = None,
+):
     alert = models.Alert(
         device_id=device_id,
         category=category,
@@ -32,12 +40,16 @@ def _create_alert(session, device_id: str, category: str, severity: str, descrip
     session.add(alert)
     session.commit()
     session.refresh(alert)
-    # Broadcast alert
-    import asyncio
-    asyncio.create_task(send_to_all({"type": "alert", "payload": alert.dict()}))
+    # Broadcast alert – use background tasks if available, else schedule directly
+    if background_tasks:
+        background_tasks.add_task(send_to_all, {"type": "alert", "payload": alert.model_dump()})
+    else:
+        # Fallback for non‑FastAPI contexts (e.g., unit tests without a loop)
+        import asyncio
+        asyncio.create_task(send_to_all({"type": "alert", "payload": alert.model_dump()}))
     return alert
 
-def notify(event_type: str, payload: Dict):
+def notify(event_type: str, payload: Dict, background_tasks: Optional[BackgroundTasks] = None):
     """Entry point for all event‑driven alerts.
 
     ``event_type`` is a free‑form string used by routers.
@@ -56,6 +68,7 @@ def notify(event_type: str, payload: Dict):
                 category="motion",
                 severity="info",
                 description="PIR motion detected",
+                background_tasks=background_tasks,
             )
         if event_type == "human_detection":
             confidence = payload.get("confidence", 0)
@@ -66,6 +79,7 @@ def notify(event_type: str, payload: Dict):
                 category="human_detection",
                 severity=severity,
                 description=f"Human detected with confidence {confidence:.2f}",
+                background_tasks=background_tasks,
             )
         if event_type == "animal_detection":
             obj = payload.get("class", "animal")
@@ -76,6 +90,7 @@ def notify(event_type: str, payload: Dict):
                 category="animal_detection",
                 severity="info",
                 description=f"{obj} detected (confidence {confidence:.2f})",
+                background_tasks=background_tasks,
             )
         if event_type == "ultrasonic":
             distance = payload.get("distance_cm")
@@ -96,6 +111,7 @@ def notify(event_type: str, payload: Dict):
                 category="water_level",
                 severity=severity,
                 description=desc,
+                background_tasks=background_tasks,
             )
         # Unknown event – ignore
         log.debug("No alert rule for event_type %s", event_type)
